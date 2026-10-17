@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="40" viewBox="0 0 1200 40">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff5f6d"/><stop offset=".5" stop-color="#5eead4"/><stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <style>
+      @keyframes dash{to{stroke-dashoffset:-600}}
+      .l{stroke:url(#g);stroke-width:3;fill:none;stroke-dasharray:160 440;stroke-linecap:round;animation:dash 4s linear infinite}
+      @keyframes pulse{0%,100%{r:4;opacity:.6}50%{r:7;opacity:1}}
+      .d{fill:#5eead4;animation:pulse 2s ease-in-out infinite}
+    </style>
+  </defs>
+  <line x1="0" y1="20" x2="1200" y2="20" stroke="#ffffff" stroke-opacity=".12" stroke-width="1"/>
+  <line class="l" x1="0" y1="20" x2="1200" y2="20"/>
+  <circle class="d" cx="600" cy="20" r="5"/>
+</svg>

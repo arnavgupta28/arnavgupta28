@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180">
+  <defs>
+    <linearGradient id="w1" x1="0" x2="1"><stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#5eead4"/></linearGradient>
+    <linearGradient id="w2" x1="0" x2="1"><stop offset="0" stop-color="#ff5f6d"/><stop offset="1" stop-color="#ffc371"/></linearGradient>
+    <style>
+      @keyframes slide{to{transform:translateX(-600px)}}
+      .wave{animation:slide linear infinite}
+      .t{font:700 26px 'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#fff}
+      .s{font:500 14px 'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#e2e8f0}
+    </style>
+  </defs>
+  <rect width="1200" height="180" fill="#0b0f1a"/>
+  <g class="wave" style="animation-duration:9s" opacity=".55">
+    <path fill="url(#w2)" d="M0 110 Q150 70 300 110 T600 110 T900 110 T1200 110 T1500 110 T1800 110 V180 H0Z"/>
+  </g>
+  <g class="wave" style="animation-duration:6s" opacity=".9">
+    <path fill="url(#w1)" d="M0 130 Q150 95 300 130 T600 130 T900 130 T1200 130 T1500 130 T1800 130 V180 H0Z"/>
+  </g>
+  <text x="600" y="62" text-anchor="middle" class="t">Thanks for scrolling this far ✨</text>
+  <text x="600" y="88" text-anchor="middle" class="s">Let's build something that ships.</text>
+</svg>
