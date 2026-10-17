@@ -111,18 +111,10 @@ class Arnav:
 <table align="center">
 <tr>
 <td align="center" width="50%">
-  <img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/smudge.svg" width="56" align="left" alt="Smudge">
-  <a href="https://github.com/arnavgupta28/Fingerprint">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=arnavgupta28&repo=Fingerprint&theme=tokyonight&bg_color=0b0f1a&border_color=5eead4&title_color=5eead4&icon_color=ffc371&text_color=c9d1d9&hide_border=false" alt="Fingerprint">
-  </a>
-  <br><sub>🔐 See what the internet knows about you, before someone else does. Live web scan, confidence scores, removal guides.</sub>
+  <a href="https://github.com/arnavgupta28/Fingerprint"><img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/card-fingerprint.svg" width="100%" alt="Fingerprint, with Smudge the mascot"></a>
 </td>
 <td align="center" width="50%">
-  <img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/receipts.svg" width="56" align="right" alt="Receipt Star">
-  <a href="https://github.com/arnavgupta28/Agent-Recipts">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=arnavgupta28&repo=Agent-Recipts&theme=tokyonight&bg_color=0b0f1a&border_color=818cf8&title_color=a5b4fc&icon_color=ffc371&text_color=c9d1d9" alt="Agent Receipts">
-  </a>
-  <br><sub>🧾 Watch your coding agents work as a live graph. Open any step, see the diff, rewind with one click.</sub>
+  <a href="https://github.com/arnavgupta28/Agent-Recipts"><img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/card-receipts.svg" width="100%" alt="Agent Receipts, with the Receipt Star mascot"></a>
 </td>
 </tr>
 <tr>
