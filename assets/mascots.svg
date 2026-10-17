@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0f1a"/><stop offset="1" stop-color="#141a2e"/></linearGradient>
+    <filter id="mblur"><feGaussianBlur stdDeviation="22"/></filter>
+    <pattern id="mgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+    <style>
+      @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-16px) rotate(2deg)}}
+      @keyframes bob2{0%,100%{transform:translateY(-10px) rotate(2deg)}50%{transform:translateY(8px) rotate(-3deg)}}
+      @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.6)}50%{opacity:1;transform:scale(1.2)}}
+      @keyframes fade{0%,100%{opacity:.5}50%{opacity:1}}
+      @keyframes shadow{0%,100%{transform:scaleX(1);opacity:.35}50%{transform:scaleX(.8);opacity:.2}}
+      .smudge{transform-origin:300px 260px;animation:bob 4s ease-in-out infinite}
+      .receipts{transform-origin:900px 230px;animation:bob2 5s ease-in-out infinite}
+      .sh1{transform-origin:300px 352px;animation:shadow 4s ease-in-out infinite}
+      .sh2{transform-origin:900px 352px;animation:shadow 5s ease-in-out infinite}
+      .tw{transform-box:fill-box;transform-origin:center;animation:twinkle ease-in-out infinite}
+      .name{font:800 30px 'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#fff}
+      .tag{font:500 16px 'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#aab4d4}
+      .hdr{font:700 15px 'SFMono-Regular',Consolas,monospace;fill:#5eead4;letter-spacing:3px}
+      .bubble{font:600 15px 'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#0b0f1a}
+      .b1{animation:fade 4s ease-in-out infinite}
+      .b2{animation:fade 5s ease-in-out infinite}
+    </style>
+  </defs>
+  <rect width="1200" height="400" rx="24" fill="url(#mbg)"/>
+  <rect width="1200" height="400" rx="24" fill="url(#mgrid)"/>
+  <circle cx="300" cy="230" r="170" fill="#F26B57" opacity=".18" filter="url(#mblur)"/>
+  <circle cx="900" cy="230" r="170" fill="#ffc53d" opacity=".16" filter="url(#mblur)"/>
+
+  <g fill="#fff">
+    <path class="tw" style="animation-duration:2.2s" d="M120 70l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path class="tw" style="animation-duration:3s;animation-delay:-1s" d="M560 60l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+    <path class="tw" style="animation-duration:2.6s;animation-delay:-.5s" d="M640 330l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+    <path class="tw" style="animation-duration:3.4s;animation-delay:-2s" d="M1090 90l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path class="tw" style="animation-duration:2.8s;animation-delay:-1.4s" d="M1120 300l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+  </g>
+
+  <text x="600" y="48" text-anchor="middle" class="hdr">MEET THE MASCOTS</text>
+
+  <!-- Smudge -->
+  <ellipse class="sh1" cx="300" cy="352" rx="90" ry="10" fill="#000"/>
+  <g class="smudge"><g transform="translate(180 90) scale(1)">
+  <title id="t">Smudge, the Fingerprint mascot</title>
+  <defs>
+    <clipPath id="smudge-body">
+      <path d="M112 34 C160 34 186 78 186 128 C186 180 154 210 112 210 C70 210 38 180 38 128 C38 78 64 34 112 34 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- shadow -->
+  <ellipse cx="114" cy="224" rx="60" ry="7" fill="#1F1F2B" opacity="0.10"/>
+
+  <!-- feet -->
+  <ellipse cx="90" cy="210" rx="17" ry="9" fill="#E0503B"/>
+  <ellipse cx="136" cy="210" rx="17" ry="9" fill="#E0503B"/>
+
+  <!-- waving arm (behind body) -->
+  <path d="M48 128 Q26 116 26 90" fill="none" stroke="#E0503B" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- body -->
+  <path d="M112 34 C160 34 186 78 186 128 C186 180 154 210 112 210 C70 210 38 180 38 128 C38 78 64 34 112 34 Z" fill="#F26B57"/>
+
+  <!-- fingerprint ridges -->
+  <g clip-path="url(#smudge-body)" fill="none" stroke="#FF9E8A" stroke-width="4.5" stroke-linecap="round">
+    <ellipse cx="112" cy="86" rx="11" ry="15"/>
+    <ellipse cx="112" cy="90" rx="23" ry="29" stroke-dasharray="118 16"/>
+    <ellipse cx="112" cy="95" rx="35" ry="43" stroke-dasharray="70 14 150 12"/>
+    <ellipse cx="112" cy="100" rx="47" ry="57" stroke-dasharray="200 18 90 14"/>
+    <ellipse cx="112" cy="106" rx="59" ry="71" stroke-dasharray="130 16 220 12"/>
+    <ellipse cx="112" cy="112" rx="71" ry="85" stroke-dasharray="260 20 160 16"/>
+  </g>
+
+  <!-- face patch keeps the face readable -->
+  <ellipse cx="112" cy="140" rx="50" ry="34" fill="#F26B57"/>
+
+  <!-- lashes -->
+  <g stroke="#1F1F2B" stroke-width="3" stroke-linecap="round">
+    <line x1="82" y1="113" x2="78" y2="105"/>
+    <line x1="91" y1="110" x2="91" y2="101"/>
+    <line x1="100" y1="113" x2="104" y2="105"/>
+    <line x1="124" y1="113" x2="120" y2="105"/>
+    <line x1="133" y1="110" x2="133" y2="101"/>
+    <line x1="142" y1="113" x2="146" y2="105"/>
+  </g>
+
+  <!-- googly eyes -->
+  <circle cx="91" cy="132" r="17" fill="#FFFFFF" stroke="#1F1F2B" stroke-width="3"/>
+  <circle cx="133" cy="132" r="17" fill="#FFFFFF" stroke="#1F1F2B" stroke-width="3"/>
+  <circle cx="94" cy="135" r="10" fill="#1F1F2B"/>
+  <circle cx="136" cy="135" r="10" fill="#1F1F2B"/>
+  <circle cx="97" cy="131" r="3.5" fill="#FFFFFF"/>
+  <circle cx="139" cy="131" r="3.5" fill="#FFFFFF"/>
+
+  <!-- smile -->
+  <path d="M103 160 Q112 168 121 160" fill="none" stroke="#1F1F2B" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- arm holding the magnifier -->
+  <path d="M180 148 Q192 154 194 166" fill="none" stroke="#E0503B" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- magnifying glass -->
+  <line x1="200" y1="180" x2="224" y2="206" stroke="#1F1F2B" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="188" cy="164" r="24" fill="#FFF5EA" fill-opacity="0.85" stroke="#1F1F2B" stroke-width="7"/>
+  <path d="M176 154 Q180 147 188 146" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+</g></g>
+  <g class="b1" transform="translate(430 110)">
+    <rect width="150" height="36" rx="18" fill="#5eead4"/>
+    <path d="M14 36l-8 14 22-14z" fill="#5eead4"/>
+    <text x="75" y="24" text-anchor="middle" class="bubble">Found you! 🔍</text>
+  </g>
+  <text x="300" y="385" text-anchor="middle" class="name" font-size="22">Smudge</text>
+
+  <!-- Receipts star -->
+  <ellipse class="sh2" cx="900" cy="352" rx="90" ry="10" fill="#000"/>
+  <g class="receipts"><g transform="translate(788 96) scale(0.875)">
+  <defs>
+    <mask id="crescent" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="56">
+      <rect width="64" height="56" fill="#fff"/><circle cx="47" cy="19" r="15" fill="#000"/>
+    </mask>
+    <radialGradient id="orb-fail" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".95"/><stop offset="22%" stop-color="#ffb3c4"/><stop offset="70%" stop-color="#ff5b7f"/><stop offset="100%" stop-color="#b3123a"/>
+    </radialGradient>
+    <radialGradient id="orb-glass" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".35"/><stop offset="60%" stop-color="#1a1d33" stop-opacity=".9"/><stop offset="100%" stop-color="#0b0d1a"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6fb4ff"/><stop offset="35%" stop-color="#a58bff"/><stop offset="65%" stop-color="#ffc94a"/><stop offset="100%" stop-color="#ff7b8f"/>
+    </linearGradient>
+    
+    <radialGradient id="body-0" gradientUnits="userSpaceOnUse" cx="24" cy="14" r="48">
+      <stop offset="0%" stop-color="#fff3c4"/><stop offset="45%" stop-color="#ffc94a"/><stop offset="100%" stop-color="#e08a12"/>
+    </radialGradient>
+    <radialGradient id="orb-0" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/><stop offset="22%" stop-color="#fff3c4"/><stop offset="70%" stop-color="#ffc94a"/><stop offset="100%" stop-color="#e08a12"/>
+    </radialGradient>
+    <linearGradient id="tail-0" x1="1" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#ffc94a" stop-opacity=".9"/><stop offset="100%" stop-color="#fff3c4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="body-1" gradientUnits="userSpaceOnUse" cx="24" cy="14" r="48">
+      <stop offset="0%" stop-color="#b9fff4"/><stop offset="45%" stop-color="#3fd3c6"/><stop offset="100%" stop-color="#11867f"/>
+    </radialGradient>
+    <radialGradient id="orb-1" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/><stop offset="22%" stop-color="#b9fff4"/><stop offset="70%" stop-color="#3fd3c6"/><stop offset="100%" stop-color="#11867f"/>
+    </radialGradient>
+    <linearGradient id="tail-1" x1="1" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#3fd3c6" stop-opacity=".9"/><stop offset="100%" stop-color="#b9fff4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="body-2" gradientUnits="userSpaceOnUse" cx="24" cy="14" r="48">
+      <stop offset="0%" stop-color="#ffd0d8"/><stop offset="45%" stop-color="#ff7b8f"/><stop offset="100%" stop-color="#cc3554"/>
+    </radialGradient>
+    <radialGradient id="orb-2" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/><stop offset="22%" stop-color="#ffd0d8"/><stop offset="70%" stop-color="#ff7b8f"/><stop offset="100%" stop-color="#cc3554"/>
+    </radialGradient>
+    <linearGradient id="tail-2" x1="1" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#ff7b8f" stop-opacity=".9"/><stop offset="100%" stop-color="#ffd0d8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="body-3" gradientUnits="userSpaceOnUse" cx="24" cy="14" r="48">
+      <stop offset="0%" stop-color="#e3d9ff"/><stop offset="45%" stop-color="#a58bff"/><stop offset="100%" stop-color="#6646d8"/>
+    </radialGradient>
+    <radialGradient id="orb-3" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/><stop offset="22%" stop-color="#e3d9ff"/><stop offset="70%" stop-color="#a58bff"/><stop offset="100%" stop-color="#6646d8"/>
+    </radialGradient>
+    <linearGradient id="tail-3" x1="1" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#a58bff" stop-opacity=".9"/><stop offset="100%" stop-color="#e3d9ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="body-4" gradientUnits="userSpaceOnUse" cx="24" cy="14" r="48">
+      <stop offset="0%" stop-color="#d8ecff"/><stop offset="45%" stop-color="#6fb4ff"/><stop offset="100%" stop-color="#2f6fd6"/>
+    </radialGradient>
+    <radialGradient id="orb-4" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/><stop offset="22%" stop-color="#d8ecff"/><stop offset="70%" stop-color="#6fb4ff"/><stop offset="100%" stop-color="#2f6fd6"/>
+    </radialGradient>
+    <linearGradient id="tail-4" x1="1" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#6fb4ff" stop-opacity=".9"/><stop offset="100%" stop-color="#d8ecff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="body-5" gradientUnits="userSpaceOnUse" cx="24" cy="14" r="48">
+      <stop offset="0%" stop-color="#dcffd9"/><stop offset="45%" stop-color="#7fe08f"/><stop offset="100%" stop-color="#2f9a49"/>
+    </radialGradient>
+    <radialGradient id="orb-5" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/><stop offset="22%" stop-color="#dcffd9"/><stop offset="70%" stop-color="#7fe08f"/><stop offset="100%" stop-color="#2f9a49"/>
+    </radialGradient>
+    <linearGradient id="tail-5" x1="1" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#7fe08f" stop-opacity=".9"/><stop offset="100%" stop-color="#dcffd9" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="body-6" gradientUnits="userSpaceOnUse" cx="24" cy="14" r="48">
+      <stop offset="0%" stop-color="#ffd9b8"/><stop offset="45%" stop-color="#ff9f5a"/><stop offset="100%" stop-color="#c95e12"/>
+    </radialGradient>
+    <radialGradient id="orb-6" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/><stop offset="22%" stop-color="#ffd9b8"/><stop offset="70%" stop-color="#ff9f5a"/><stop offset="100%" stop-color="#c95e12"/>
+    </radialGradient>
+    <linearGradient id="tail-6" x1="1" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#ff9f5a" stop-opacity=".9"/><stop offset="100%" stop-color="#ffd9b8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <defs>
+    <radialGradient id="bgG" cx="70%" cy="20%" r="95%"><stop offset="0%" stop-color="#2a2466"/><stop offset="55%" stop-color="#11132b"/><stop offset="100%" stop-color="#06070e"/></radialGradient>
+    <radialGradient id="glowG" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b9a6ff" stop-opacity=".55"/><stop offset="100%" stop-color="#b9a6ff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="paperG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#e4dcff"/></linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity=".45"/></filter>
+    <filter id="orbGlow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="256" height="256" rx="58" fill="url(#bgG)"/>
+  <circle cx="128" cy="112" r="104" fill="url(#glowG)"/>
+  <circle cx="206" cy="46" r="11" fill="url(#orb-4)" filter="url(#orbGlow)"/>
+  <circle cx="44" cy="70" r="6" fill="url(#orb-2)" filter="url(#orbGlow)"/>
+  <g transform="rotate(-7 118 120)" filter="url(#soft)">
+    <path d="M62 44 Q62 32 74 32 L162 32 Q174 32 174 44 L174 196 L162 186 L150 196 L138 186 L126 196 L114 186 L102 196 L90 186 L78 196 L62 186 Z" fill="url(#paperG)"/>
+    <rect x="80" y="52" width="58" height="9" rx="4.5" fill="#1b1830" opacity=".85"/>
+    <rect x="80" y="68" width="38" height="7" rx="3.5" fill="#9b9cc0" opacity=".7"/>
+    <path d="M86 108 L114 108 Q122 108 126 118 L132 132 Q136 140 144 140 L158 140" stroke="#c9c2f0" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M86 108 L156 108" stroke="#c9c2f0" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+    <circle cx="88" cy="108" r="8" fill="url(#orb-0)"/>
+    <circle cx="114" cy="108" r="8" fill="url(#orb-1)"/>
+    <circle cx="148" cy="108" r="8" fill="url(#orb-0)"/>
+    <circle cx="150" cy="140" r="8" fill="url(#orb-fail)"/>
+    <rect x="80" y="160" width="46" height="7" rx="3.5" fill="#9b9cc0" opacity=".55"/>
+  </g>
+  <svg x="124" y="122" class="av av-happy" width="120" height="105" viewBox="0 0 64 56" role="img" aria-label="Nova">
+    
+    <ellipse cx="32" cy="54.5" rx="20" ry="1.8" fill="#000" opacity=".35"/>
+    <path d="M32.00,5.00 L39.64,19.48 L55.78,22.27 L44.36,34.02 L46.69,50.23 L32.00,43.00 L17.31,50.23 L19.64,34.02 L8.22,22.27 L24.36,19.48 Z" fill="url(#body-0)" stroke="url(#body-0)" stroke-width="7" stroke-linejoin="round"/><path d="M24 17 L30 8" stroke="#fff" stroke-opacity=".45" stroke-width="2.6" fill="none" stroke-linecap="round"/><path class="" d="M54 8 l1.4 3.6 3.6 1.4 -3.6 1.4 -1.4 3.6 -1.4 -3.6 -3.6 -1.4 3.6 -1.4z" fill="#fff6d0"/><path d="M23.4 32 q2.6 -3.6 5.2 0 M35.4 32 q2.6 -3.6 5.2 0" stroke="#1b1830" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <path d="M29.4 36 q2.6 2.6 5.2 0" stroke="#1b1830" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="22" cy="36" rx="3" ry="1.7" fill="#ff6f9a" opacity=".4"/><ellipse cx="42" cy="36" rx="3" ry="1.7" fill="#ff6f9a" opacity=".4"/>
+  </svg>
+
+  <g id="magnifier">
+    <clipPath id="lensClip"><circle cx="146" cy="128" r="20"/></clipPath>
+    <line x1="141" y1="147" x2="135" y2="163" stroke="#2c2556" stroke-width="9" stroke-linecap="round"/>
+    <line x1="141" y1="147" x2="135" y2="163" stroke="#5b4fa8" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    <circle cx="146" cy="128" r="20" fill="#cfe9ff" fill-opacity=".22"/>
+    <g clip-path="url(#lensClip)">
+      <circle cx="150" cy="134" r="13" fill="url(#orb-fail)"/>
+      <path d="M145 129 l10 10 M155 129 l-10 10" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <circle cx="146" cy="128" r="20" fill="none" stroke="#2c2556" stroke-width="6"/>
+    <circle cx="146" cy="128" r="20" fill="none" stroke="#ffd36b" stroke-width="2.4"/>
+    <path d="M134 118 Q138 111 146 110" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85"/>
+    <circle cx="135" cy="164" r="8" fill="#ffc94a" stroke="#e08a12" stroke-width="1.6"/>
+    <path d="M131 161 q3 -3 7 -1" stroke="#fff3c4" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".9"/>
+  </g>
+</g></g>
+  <g class="b2" transform="translate(620 110)">
+    <rect width="160" height="36" rx="18" fill="#ffc371"/>
+    <path d="M146 36l8 14-22-14z" fill="#ffc371"/>
+    <text x="80" y="24" text-anchor="middle" class="bubble">Step 7 passed ✓</text>
+  </g>
+  <text x="900" y="385" text-anchor="middle" class="name" font-size="22">Receipt Star</text>
+</svg>

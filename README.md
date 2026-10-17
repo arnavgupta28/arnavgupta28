@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=800&color=5EEAD4&center=true&vCenter=true&multiline=false&width=760&lines=Hi%2C+I'm+Arnav+%F0%9F%91%8B;I+build+AI+agents+that+actually+do+the+work;Python+%E2%80%A2+TypeScript+%E2%80%A2+FastAPI+%E2%80%A2+LLMs+%E2%80%A2+CrewAI;Hackathon+regular+%E2%80%A2+ML+tinkerer+%E2%80%A2+shipper;Scroll+down%2C+there's+a+snake+%F0%9F%90%8D" alt="Typing intro"></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=800&color=5EEAD4&center=true&vCenter=true&multiline=false&width=760&lines=Hi%2C+I'm+Arnav+%F0%9F%91%8B;I+build+AI+agents+that+actually+do+the+work;Python+%E2%80%A2+TypeScript+%E2%80%A2+FastAPI+%E2%80%A2+LLMs+%E2%80%A2+CrewAI;Hackathon+regular+%E2%80%A2+ML+tinkerer+%E2%80%A2+shipper;Say+hi+to+Smudge+and+Receipt+Star+%F0%9F%91%87;Scroll+down%2C+there's+a+snake+%F0%9F%90%8D" alt="Typing intro"></a>
 </p>
 
 <p align="center">
@@ -59,6 +59,28 @@ class Arnav:
 
 <img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/divider.svg" width="100%" alt="">
 
+<!-- Mascots -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/mascots.svg" width="100%" alt="Meet the mascots: Smudge from Fingerprint and the Receipt Star from Agent Receipts">
+</p>
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+  <a href="https://github.com/arnavgupta28/Fingerprint"><img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/smudge.svg" width="110" alt="Smudge"></a><br>
+  <b>Smudge</b> · <a href="https://github.com/arnavgupta28/Fingerprint">Fingerprint</a><br>
+  <sub>A friendly fingerprint with a magnifying glass. Finds what the web knows about you, then helps you wipe it.</sub>
+</td>
+<td align="center" width="50%">
+  <a href="https://github.com/arnavgupta28/Agent-Recipts"><img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/receipts.svg" width="110" alt="Receipt Star"></a><br>
+  <b>Receipt Star</b> · <a href="https://github.com/arnavgupta28/Agent-Recipts">Agent Receipts</a><br>
+  <sub>Keeps a receipt for every step your coding agents take. Green orbs passed, red ones get a second look.</sub>
+</td>
+</tr>
+</table>
+
+<img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/divider.svg" width="100%" alt="">
+
 <!-- Tech -->
 <h2 align="center">🛠️ Tech I reach for</h2>
 
@@ -89,12 +111,14 @@ class Arnav:
 <table align="center">
 <tr>
 <td align="center" width="50%">
+  <img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/smudge.svg" width="56" align="left" alt="Smudge">
   <a href="https://github.com/arnavgupta28/Fingerprint">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=arnavgupta28&repo=Fingerprint&theme=tokyonight&bg_color=0b0f1a&border_color=5eead4&title_color=5eead4&icon_color=ffc371&text_color=c9d1d9&hide_border=false" alt="Fingerprint">
   </a>
   <br><sub>🔐 See what the internet knows about you, before someone else does. Live web scan, confidence scores, removal guides.</sub>
 </td>
 <td align="center" width="50%">
+  <img src="https://raw.githubusercontent.com/arnavgupta28/arnavgupta28/main/assets/receipts.svg" width="56" align="right" alt="Receipt Star">
   <a href="https://github.com/arnavgupta28/Agent-Recipts">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=arnavgupta28&repo=Agent-Recipts&theme=tokyonight&bg_color=0b0f1a&border_color=818cf8&title_color=a5b4fc&icon_color=ffc371&text_color=c9d1d9" alt="Agent Receipts">
   </a>
